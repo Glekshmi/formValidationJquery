@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Form</title>
+      <script src="./script/script.js"></script>
+      <link rel="stylesheet" href="./style/style.css">
+   </head>
+   <body>
+      <form name="formName" method="post" action="success.html">
+         <fieldset >
+            <h3 class="title">Registration Form</h3>
+            <br><br>
+            <label class="labelColor">Mobile No</label>
+            <input type="text" id="phNo" class="phNo" oninput="validates(this)"><br><br>
+            <span id="lblError" style="color: red"></span><br>
+            <input type="submit" value="Submit" id="submitBtn" class="submitBtn" onclick="validates()">
+         </fieldset>
+      </form>
+   </body>
+</html>
