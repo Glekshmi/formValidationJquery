@@ -1,0 +1,41 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	width: 50%;
+	margin-left: 25%;
+}
+.title {
+	padding-top: 5%;
+	color: cadetblue;
+}
+.submitBtn {
+	margin: 5%;
+}
+.labelColor {
+	color: cadetblue;
+}
+.firstName,
+.lastName,
+.address,
+.phNo,
+.email,
+.passWord,
+.confirmPassword {
+	outline: none;
+}
+.formBody {
+	display: flex;
+        flex-direction: column;
+        margin-left: 34%;
+}
+.heading{
+	padding-bottom: 6%;
+}
+.submitBtn{
+	margin-left: 13%;
+}
+.errorColor{
+	color:red;
+}

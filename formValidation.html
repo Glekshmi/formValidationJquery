@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Form</title>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script src="./script/script.js"></script>
+      <link rel="stylesheet" href="./style/style.css">
+   </head>
+   <body>
+      <form name="formName" method="post"  onsubmit="validate(event)">
+         <fieldset>
+            <div class="formBody">
+               <div class="heading">
+                  <h3 class="title">Registration Form</h3>
+               </div>
+               <div class="content">
+                  <div class="rowOne">
+                     <label class="labelColor">First Name</label><br>
+                     <input type="text" id="firstName" oninput="nameValidate(this)"><br>
+                     <p id="firstNameValid" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <div class="rowTwo">
+                     <label class="labelColor">Last Name</label><br>
+                     <input type="text" id="lastName" oninput="nameValidate(this)"><br>
+                     <p id="lastNameValid" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <div class="rowThree">
+                     <label class="labelColor">Address</label><br>
+                     <textarea id="add" cols="21"></textarea>
+                     <br>
+                     <p id="addValid" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <div class="rowFour">
+                     <label class="labelColor">Mobile No</label><br>
+                     <input type="text" id="phone" maxlength="10" oninput="phNoValidate(this)"><br>
+                     <p id="phoneValid" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <div class="rowFive">
+                     <label class="labelColor">Email</label><br>
+                     <input type="text" id="email"><br>
+                     <p id="emailValid" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <div class="rowSix">
+                     <label class="labelColor">Password</label><br>
+                     <input type="password" id="password" oninput="password()"><br>
+                     <p id="passwordCheck" class="errorColor"><br>
+                  </div>
+                  <div class="rowSeven">
+                     <label class="labelColor">Confirm Password</label><br>
+                     <input type="password" id="confirmPass" oninput="confirmPassword()"><br>
+                     <p id="confirmPassCheck" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <input type="submit" value="Submit" id="submitBtn" class="submitBtn">
+               </div>
+            </div>
+         </fieldset>
+      </form>
+   </body>
+</html>
