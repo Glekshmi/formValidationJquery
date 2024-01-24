@@ -2,47 +2,20 @@
 	padding: 0;
 	margin: 0;
 }
-
 body {
 	width: 50%;
-	margin-left: 30%;
-	margin-top: 4%;
+	margin-left: 25%;
 }
-
 .title {
 	padding-top: 5%;
 	color: cadetblue;
-	padding-left: 37%;
 }
-
-.address {
-	margin-left: 2%;
-}
-
-.phNo {
-	margin-left: 1%;
-}
-
-.email {
-	margin-left: 7%;
-}
-
-.passWord {
-	margin-left: 3%;
-}
-
-.confirmPassword {
-	margin-right: 9%;
-}
-
 .submitBtn {
 	margin: 5%;
 }
-
 .labelColor {
 	color: cadetblue;
 }
-
 .firstName,
 .lastName,
 .address,
@@ -52,8 +25,17 @@ body {
 .confirmPassword {
 	outline: none;
 }
-
-.content {
-	padding-right: 10%;
-	padding-left: 30%;
+.formBody {
+	display: flex;
+        flex-direction: column;
+        margin-left: 34%;
+}
+.heading{
+	padding-bottom: 6%;
+}
+.submitBtn{
+	margin-left: 13%;
+}
+.errorColor{
+	color:red;
 }
